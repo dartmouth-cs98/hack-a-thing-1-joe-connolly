@@ -3,9 +3,13 @@
 The Pong Line webapp is a simple CRUD app for keeping track of a pong line in a frat basement.
 
 ### Installation:
-Clone the repository and navigate to its root folder. Install Mongodb and Node/Express following the linked tutorials below.  Then you should simply be able to start MongoDB and the Express app and navigate to localhost:3000 in your browser to use the webapp. 
+Clone the repository and navigate to its root folder. Install Mongodb and Node/Express following the linked tutorials below.  Then you should simply be able to start MongoDB and the Express app and navigate to localhost:3000 in your browser to use the webapp - in other words enter the following commands in bash: 
+```bash
+mongod
+nodemon
+```
 
-### Wnat I learned:
+### What I learned:
 To build the app I followed the Express.js tutorial here: https://www.youtube.com/watch?v=gnsO8-xJ8rs 
 For the MongoDb component I also followed instructions here: https://www.youtube.com/watch?v=bKjH8WhSu_E 
 I also deployed a sample Express app following the AWS tutorial here: https://www.youtube.com/watch?v=ubCNZRNjhyo
