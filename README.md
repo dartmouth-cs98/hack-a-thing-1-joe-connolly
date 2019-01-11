@@ -1,6 +1,7 @@
 # Pong Line Webapp 
 ### Description:
 The Pong Line webapp is a simple CRUD app for keeping track of a pong line in a frat basement.
+Here is a screenshot of the app: https://drive.google.com/file/d/1DeREUYx16v9hS5Okhmr9vA19NvrmCKxp/view?usp=sharing
 
 ### Installation:
 Clone the repository and navigate to its root folder. Install Mongodb and Node/Express following the linked tutorials below.  Then you should simply be able to start MongoDB and the Express app and navigate to localhost:3000 in your browser to use the webapp - in other words enter the following commands in bash: 
