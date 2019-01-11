@@ -1,0 +1,75 @@
+<!-- Main view file -->
+<html>
+	<head>
+		<title> Pong Line </title>
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.js"
+		  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		  crossorigin="anonymous"></script>
+		<script src="js/main.js"> </script> 
+		<style>
+			div {width: 500px; padding: 20px;}
+			h1 {text-align:center}
+			input  {
+				padding:5px;
+				display:block;
+				width:100%;
+				font-size: 12px;
+			}
+			#submit {
+					background-color: green;
+					color: white;
+					padding: 15px 32px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 16px;
+				}
+			.deleleUser    {color: red;}
+
+			/* Table styles adapted from from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy. */
+			#users {
+			  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+
+			#users td, #users th {
+			  border: 1px solid #ddd;
+			  padding: 8px;
+			}
+
+			#users tr:nth-child(even){background-color: #f2f2f2;}
+
+			#users tr:hover {background-color: #ddd;}
+
+			#users th {
+			  padding-top: 12px;
+			  padding-bottom: 12px;
+			  text-align: left;
+			  background-color: #4CAF50;
+			  color: white;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div>
+		<h1> Pong Line </h1>
+		<form method="POST" action=  "/users/add"> 
+			<br>
+			<input type="text" placeholder="Enter your name" name = "first_name">
+			<br> 
+			<input id="submit" type="submit" value="Submit"/>
+		</form>
+
+		<table id="users">
+		<% users.forEach(function(user) { %>
+			<tr><td><%= user.first_name %> </td> <td> <%=user.time%></td><td> 
+			<a href="#" class="deleteUser" 
+			data-id = "<%= user._id %>" >Delete</a> </td> </tr>
+		<% }) %> 
+		</table>
+	</div>
+	</body>
+
